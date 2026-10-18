@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Персональна сторінка — Білоуса Богдана</title>
+</head>
+<body>
+
+  <header>
+    <!-- Замініть photo.jpg на своє фото -->
+    <img src="images.jpg" alt="Моє фото">
+    <h1>Білоус Богдан</h1>
+    <p>Студент · Початківець-розробник</p>
+  </header>
+
+  <nav>
+    <a href="#about">Про мене</a>
+    <a href="#skills">Навички</a>
+    <a href="#code">Приклад коду</a>
+    <a href="#education">Освіта</a>
+    <a href="#languages">Мови</a>
+    <a href="#projects">Проєкти</a>
+  </nav>
+
+  <main>
+
+    <section id="about">
+      <h2>Про мене</h2>
+      <p>Я студент, який цікавиться розробкою ПЗ та створенням зручних програмних рішень. Люблю вивчати нові технології та втілювати ідеї в реальність.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Навички</h2>
+      <ul class="tags">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>С#</li>
+        <li>Java</li>
+        <li>VS Code</li>
+      </ul>
+    </section>
+
+    <section id="code">
+      <h2>Приклад коду</h2>
+      <p class="muted">Фрагмент коду, що демонструє мої навички у C#:</p>
+<pre><code>Product product = new Product("Laptop", 1000, 2);
+Console.WriteLine("Product: " + product.name);
+Console.WriteLine("Cost: " + product.price + " dollars");
+Console.WriteLine("Quantity: " + product.quantity);
+Console.WriteLine("Total cost: " + product.TotalPrice() + " dollars");
+class Product
+{
+public string name;
+public decimal price;
+public int quantity;
+public Product(string name, decimal price, int quantity)
+{
+this.name = name;
+this.price = price;
+this.quantity = quantity;
+}
+public decimal TotalPrice()
+{
+return price * quantity;
+}
+}
+    </section>
+
+    <section id="education">
+      <h2>Освіта</h2>
+      <p><strong>КАІ ТЕХ</strong></p>
+      <p class="muted">Спеціальність: Кібербезпека · 2023 – теперішній час</p>
+    </section>
+
+    <section id="languages">
+      <h2>Мови</h2>
+      <table>
+        <tr><td>Українська</td><td>рідна</td></tr>
+        <tr><td>Англійська</td><td>B2</td></tr>
+      </table>
+    </section>
+
+    <section id="projects">
+      <h2>Проєкти</h2>
+      <div class="projects">
+        <div class="project">
+          <img src="image.png".png" alt="Скріншот проєкту 1">
+          <div>
+            <h3>Назва проєкту 1</h3>
+            <a href="https://github.com/nedoBodia/practice1-2" target="_blank">Переглянути на GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>© 2026 Богдан Білоус</footer>
+
+</body>
+</html>
